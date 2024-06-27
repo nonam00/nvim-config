@@ -20,3 +20,4 @@ vim.opt.smartindent   = true
 
 vim.g.mapleader       = " "
 
+vim.keymap.set("v", "<leader>y", '"+y', {})
