@@ -27,7 +27,7 @@ return {
 
     dashboard.section.footer.val = {
       " ",
-      "new person, same old mistakes",
+      "fuck society",
       " ",
     }
 
