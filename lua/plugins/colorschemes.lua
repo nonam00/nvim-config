@@ -9,9 +9,9 @@ return {
   {
     "frenzyexists/aquarium-vim",
     config = function()
-      --vim.cmd.colorscheme("aquarium")
+      vim.cmd.colorscheme("aquarium")
       --vim.cmd(":hi Normal guibg=NONE ctermbg=NONE")
-      --vim.cmd(":hi Normal guibg=NONE ctermbg=NONE")
+      --vim.cmd(":hi NormalFloat guibg=NONE ctermbg=NONE")
     end
   },
   {
@@ -23,8 +23,10 @@ return {
   {
     "sam4llis/nvim-tundra",
     config = function ()
-      vim.g.tundra_biome = 'arctic'
-      vim.cmd.colorscheme("tundra")
+      --vim.g.tundra_biome = 'arctic'
+      --vim.cmd.colorscheme("tundra")
+	    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
     end
   },
 }
