@@ -1,17 +1,21 @@
 return {
   {
+    "xiyaowong/transparent.nvim",
+    config = function()
+      require("transparent").setup({})
+      vim.cmd(":TransparentEnable")
+    end
+  },
+  {
     'sainnhe/gruvbox-material',
     config = function()
-      --vim.g.gruvbox_material_enable_italic = true
       --vim.cmd.colorscheme('gruvbox-material')
     end
   },
   {
     "frenzyexists/aquarium-vim",
     config = function()
-      vim.cmd.colorscheme("aquarium")
-      --vim.cmd(":hi Normal guibg=NONE ctermbg=NONE")
-      --vim.cmd(":hi NormalFloat guibg=NONE ctermbg=NONE")
+      --vim.cmd.colorscheme("aquarium")
     end
   },
   {
@@ -25,8 +29,12 @@ return {
     config = function ()
       --vim.g.tundra_biome = 'arctic'
       --vim.cmd.colorscheme("tundra")
-	    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
     end
   },
+  {
+    "rose-pine/neovim",
+    config = function ()
+      vim.cmd.colorscheme("rose-pine")
+    end
+  }
 }
